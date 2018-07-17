@@ -1,0 +1,36 @@
+@import "bootstrap";
+.header {
+    background: green;
+    height: 60px;
+    width: 100%;
+}
+
+.left-menu {
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-height: 100%;
+    top: 0px;
+    left: 0px;
+    background: blue;
+}
+
+.content {
+    overflow-y: hidden;
+    overflow-x: hidden;
+    position: absolute;
+    min-height: 100%;
+    right: 0px;
+    background: transparent;
+}
+
+.content-container {
+    padding: 20px 20px;
+}
+
+.card-view {
+    margin-bottom: 30px;
+    .card-item {
+        height: 220px;
+    }
+}
