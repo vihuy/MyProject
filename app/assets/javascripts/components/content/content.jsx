@@ -3,7 +3,7 @@ class Content extends React.Component {
         let numCards = 500
         let cards = []
         for (var i = 0; i < numCards; i++) {
-            cards.push(<CardView position={i} />);
+            cards.push(i);
         }
         return (
             <div className="row">
@@ -13,7 +13,15 @@ class Content extends React.Component {
                         <TopMenu />
                     </div>
                     <div className="row content-container">
-                        {cards}
+                        <ul className="col-sm-12">
+                            {
+                                cards.map((index) => (
+                                    <li key={index}>
+                                        <CardView position={index} />
+                                    </li>
+                                ))
+                            }
+                        </ul>
                     </div>
                 </div>
             </div>
